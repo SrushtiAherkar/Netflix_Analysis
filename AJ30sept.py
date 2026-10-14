@@ -102,7 +102,7 @@ plans = sorted(netflix["Subscription_Plan"].dropna().unique().tolist())
 selected_regions = st.sidebar.multiselect("REGION", regions, default=regions)
 selected_plans = st.sidebar.multiselect("SUBSCRIPTION PLAN", plans, default=plans)
 st.sidebar.markdown("---")
-st.sidebar.markdown('<div class="sidebar-note">Built from the charts and metrics in AJ30sept.py.</div>', unsafe_allow_html=True)
+st.sidebar.markdown('<div class="sidebar-note">Built for analysis</div>', unsafe_allow_html=True)
 
 filtered = netflix.copy()
 if isinstance(date_range, tuple) and len(date_range) == 2:
